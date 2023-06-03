@@ -15,6 +15,17 @@
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
 
+# configuracion para RAMP 1.4-1.6 doble extrusor, single nozzle
+
+## set steps-mm
+Comando: [M92](https://marlinfw.org/docs/gcode/M092.html)
+
+M92 [E<steps>] [T<index>] [X<steps>] [Y<steps>] [Z<steps>]
+This setting for all axes is saved with M500 and loaded with M501.
+
+## auto-tune PID
+Comando: [PID marlin G-CODE](https://reprap.org/wiki/PID_Tuning)
+
 ## Marlin 2.1 Bugfix Branch
 
 __Not for production use. Use with caution!__
